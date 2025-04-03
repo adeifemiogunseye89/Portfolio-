@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="myProfile.css">
 <body>
+
   <section class="#hero">
+              <!-- a preview that includes my personal pic and synopsis of the Cv using Bootrap5-->
       <div class="container bg-light my-5 p-3">
         <div class="row justify-content-center  align-items-center">
             <div class=" col-sm col-md-4 col-xl-3 me-2 my-3">
@@ -22,15 +24,17 @@
                 </div>
               </div>
             </div>
-  
+              <!-- Boostrap 5 Accordion to helps greatly to dynamically highlight the section about the profile -->
             <div class="col col-md-7 col-xl-8">
         <div class="accordion" id="aboutMe">
           <div class="accordion-item">
             <h2 class="accordion-header">
+              <!-- importing button attributes of toggle,aria-expanded,and control help accessibility of the propifle details by anyone who is using reader tools on the site, therefore giving everyone same opportunity of accessibility -->
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#myAddress" aria-expanded="true" aria-controls="myAddress">
                 Contact Addresss
               </button>
             </h2>
+            <!-- The data-bs-parent class attributes value of "accordion-collapse collapse show" by defauilt shows the content in it and accomodate every other accordion item element but closes them until they are clicked -->
           <div id="myAddress" class="accordion-collapse collapse show" data-bs-parent="aboutMe">
             <div class="accordion-body">
               <strong>Plot 1, Samuel David Close, Off Pure Water Road, BestTime BusStop, Off Lekki-Epe Express Way, Ibeju-Lekki L.G.A, Lagos, Nigeria.</strong> <br>
@@ -41,6 +45,7 @@
             </div>
           </div>
         </div>
+            <!-- other item of the accordion element has by default class attribute "accordion-button collapsed" in the button, toggle 'collapse' aria-expanded "false" -->
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#myEdu" aria-expanded="false" aria-controls="myEdu">
@@ -101,7 +106,7 @@
           </h2>
           <div id="resume" class="accordion-collapse collapse" data-bs-parent="#aboutMe">
             <div class="accordion-body">
-              <strong>download my cv here</strong> <br> <a href="ADEBANJO-OGUNSEYE-CV.pdf" download="ADEBANJO-OGUNSEYE-CV">Adebanjo CV</a><code> <br>I am open to an interview any day of the week</code>
+              <strong>download my cv here</strong> <br> <a href="ADEBANJO-OGUNSEYE-CV.pdf" download="ADEBANJO-OGUNSEYE-CV.pdf">Adebanjo CV</a><code> <br>I am open to an interview any day of the week</code>
             </div>
           </div>
         </div>
@@ -112,20 +117,20 @@
 
     <!-- documentation for for larger screen navbar section-->
     <section>
-        <nav class=" navbar navbar-expand-md bg-dark sticky">
-          <div class="container-xxl">
+        <nav class=" navbar navbar-expand-md bg-dark">
+          <div class="container-md">
 
             <!--the navbar-brand class can be style diffrently, therefore it can be in diffrent div or span tag element for that purpose if need arises-->
-              <div>
-                <a class="navbar-brand fw-bold" href="#intro"><img src="./thumbnails/light.jpg" class="brand-img d-flex text-center" height="" alt="pic">BlueBridge-Wire</a>
+            <div class="col-4">
+                <a class="navbar-brand fw-bold" href="#intro"><img src="./cell.webp" class="brand-img d-flex text-center" height="auto" alt="logo">BlueBridge-Wire</a>
               </div>
 
             <!-- for responsive navbar the documentation will have toggler button for small/mobile screen navbar section. this buttton must have a span/div element tag with a class of "navbar-toggler-icon and nothing else"-->
               <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-              <!--the toggler-button's 'data-bs-target' class targeted the items on the 'main navbar' with the same or share id tag in the main navbar div in the nav element just below it-->
+              <!--the toggler-button's 'data-bs-target' class targeted the items on the 'main navbar' with the same or shared id tag in the main navbar div in the nav element just below it-->
             <div class="collapse navbar-collapse justify-content-end" id="main-navbar">
-              <!--the main navbar div must have a class of collapse, this the class the toggler in the toggler's button data-bs-toggle will be making reference to/ targeting and a class of 'navbar-collapse' to complete the circle for the toggler's button in the small screen. this div also carries the toggler-bs-target 'id' to enable the toggle elemt in the small screen. it can be justify,color etc-->
+              <!--the main navbar div must have a class of collapse, this the class toggler in the toggler's button data-bs-toggle will be making reference to/ targeting a class of 'navbar-collapse' to complete the circle for the toggler's button in the small screen. this div also carries the toggler-bs-target 'id' to enable the toggle element in the small screen. it can be justify,color etc-->
 
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -138,128 +143,169 @@
         </nav>
     </section>
 
-    <div class="container my-5">
-      <div class="row align-items-center">
-          <div class="col-sm col-md-3">
-              <div class="card shadow-lg">
-                  <div class="card-body">
+          <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-sm col-md-3">
+                  <div class="card shadow-lg">
+                    <div class="card-body">
                       <h5 class="card-title">ResidentApp (ComHub)</h5>
                       <p class="card-text">a one time cloud integrated security architecture platform  for safer and more secured community</p>
                       <a href="#" class="btn btn-primary shadow">About comHUb</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-warning shadow-lg">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-warning shadow-lg">
+                    <div class="card-body">
                       <h5 class="card-title">LiteRoom</h5>
                       <p class="card-text">a share of healthy, safe and easy bathroom/toilet in out nearest location</p>
                       <a href="#" class="btn btn-primary">About LiteRoom</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-primary shadow-lg">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-primary shadow-lg">
+                    <div class="card-body">
                       <h5 class="card-title">PDS</h5>
                       <p class="card-text">a platform for secured,safe and reliable transaction</p>
                       <a href="#" class="btn btn-primary">About PDS</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-dark shadow-lg">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-dark shadow-lg">
+                    <div class="card-body">
                       <h5 class="card-title">MarketDay App</h5>
                       <p class="card-text">a platform for both rural and urban markets transactions plan, travels and accessibility of goods and sevices ease </p>
                       <a href="#" class="btn btn-primary">About MarketDay</a>
+                    </div>
                   </div>
-              </div>
+                </div>
+            </div>
           </div>
-      </div>
-  </div>
        
-  <div class="container my-5">
-      <div class="row gy-3">
-          <div class="col-sm col-md-2">
-              <div class="card border-success align-items-center">
-                  <div class="card-body">
+          <div class="container my-5">
+            <div class="row gy-3">
+                <div class="col-sm col-md-3">
+                  <div class="card border-success align-items-center">
+                    <div class="card-body">
                       <h5 class="card-title">MarriageREg (Vow App)</h5>
                       <p class="card-text">a one time integrated platform  for Marriage registration</p>
                       <a href="#" class="btn btn-primary shadow">About VOW</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-light">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-light">
+                    <div class="card-body">
                       <h5 class="card-title"> Arina App</h5>
                       <p class="card-text"> al'Arina meet and date app is an app design for individuals who are interested to meet, mingle, share and possibly start relationship</p>
                       <a href="#" class="btn btn-primary">About Arina</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-4">
-              <div class="card border-info">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-info">
+                    <div class="card-body">
                       <h5 class="card-title">PUT App</h5>
                       <p class="card-text">a public utility (services) taxes (PUTs)App is a secured and reliable mode of transacting business with government MDAs. this app effortlessly democratized various taxes, rates and levies in unstructure and structure sectors of the community</p>
                       <a href="#" class="btn btn-primary">About PUT </a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card bordr-secondary">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card bordr-secondary">
+                    <div class="card-body">
                       <h5 class="card-title">OutPost App</h5>
                       <p class="card-text">Outpost is community security agencies platform for communication, planning , strategizing for combating insecurities, mitigateing crises and management of remote data with ease </p>
                       <a href="#" class="btn btn-primary">About Outpost</a>
+                    </div>
                   </div>
-              </div>
+                </div>
+            </div>
           </div>
-      </div>
-  </div>
   
   <div class="container border my-">
       <div class="row align-items-center">
-          <div class="col-sm col-md-3">
-              <div class="card border-primary shadow">
-                  <div class="card-body">
+                <div class="col-sm col-md-3">
+                  <div class="card border-primary shadow">
+                    <div class="card-body">
                       <h5 class="card-title">myTablet App</h5>
                       <p class="card-text">this is a platform aim at making pharmaceutical products within the location of the person easily accessible with just a click</p>
                       <a href="#" class="btn btn-primary shadow">About myTablet</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-dark shadow">
-                  <div class="card-body ">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-dark shadow">
+                    <div class="card-body ">
                       <h5 class="card-title">washClean App</h5>
                       <p class="card-text">a share platform of dry cleaning and laundary services available and closer to our location or where they are needed</p>
                       <a href="#" class="btn btn-primary">About washClean </a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-warning shadow">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-warning shadow">
+                    <div class="card-body">
                       <h5 class="card-title">WIREApp</h5>
                       <p class="card-text">this is social app for keeping track of individual properties,safe and secure to mirror his/her will. thus it otherwise know as mirror, that is reflecting your legal document with lawyers</p>
                       <a href="#" class="btn btn-primary">About WIRE</a>
+                    </div>
                   </div>
-              </div>
-          </div>
-          <div class="col-sm col-md-3">
-              <div class="card border-success shadow">
-                  <div class="card-body">
+                </div>
+                <div class="col-sm col-md-3">
+                  <div class="card border-success shadow">
+                    <div class="card-body">
                       <h5 class="card-title">BetValue</h5>
                       <p class="card-text">this is betting market, that specially focus on half time full time (HF/FT) prediction of football game. </p>
                       <a href="#" class="btn btn-primary">About BetValue</a>
+                    </div>
                   </div>
-              </div>
-          </div>
+                </div>
       </div>
-  </div>   
+  </div>
+  
+  <div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-sm col-md-3">
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">Transporte</h5>
+              <p class="card-text">A state digital public road transportation system, that has managerial road usage rate inbuilt. a diffused architectural disruption of agbero from public road and tracking for commercial vehicle in a geograpical area within a state</p>
+              <a href="#" class="btn btn-primary shadow">About Transporte</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm col-md-3">
+          <div class="card border-warning shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">SmartHaven</h5>
+              <p class="card-text">a shared secured platform that bridges both tenants and Apartment with ease, removing the bottlenecks of Agents challenges  and lack of integrity and trust of potential tenants, thereby disrupting the process of getting an Apartment from anywhere anytime in Nigeria. </p>
+              <a href="#" class="btn btn-primary">About SmartHaven</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm col-md-3">
+          <div class="card border-primary shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">Natal</h5>
+              <p class="card-text">a health platform for the expectant mothers, this help the pregnant women irrespective of their location, they only needs phone, internet connnection and click, they can access health care anytime and from anywhere</p>
+              <a href="#" class="btn btn-primary">About Natal</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm col-md-3">
+          <div class="card border-dark shadow-lg">
+            <div class="card-body">
+              <h5 class="card-title">MarketDay App</h5>
+              <p class="card-text">a platform for both rural and urban markets transactions plan, travels and accessibility of goods and sevices ease </p>
+              <a href="#" class="btn btn-primary">About MarketDay</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 
 <!--<div class="container" form-control  >
  <div class="row ">-->
@@ -267,7 +313,7 @@
     <div class="container-lg">
       <div class="text-center">
         <h2>Contact me here</h2>
-        <p class="lead"> any question to ask? <br> contact me directly here...</p>
+        <p class="lead"> Any question to ask? <br> contact me directly here...</p>
       </div>
   
 
@@ -338,7 +384,18 @@
     </div> 
   </div>
 </div>
-  
+  <section>
+    <footer>
+      <div class="footer">
+        <div><a href="#"><h3>Contact</h3></a></div>
+        <div><a href="#"><h3>Skill-with</h3></a></div>
+        <div><a href="#"><h3>Scholarships</h3></a></div>
+        <div><a href="#"><h3>Business</h3></a></div>
+        <div><a href="#"><h3>Collaborations</h3></a></div>
+      </div>
+    </footer>
+    
+  </section>
 
 
       <!--<div class="container-lg">
