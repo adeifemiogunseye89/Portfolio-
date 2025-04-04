@@ -1,19 +1,33 @@
-.row{
-    margin:1rem;
+body{
+    font-family: Arial, sans-serif;
+    background-color: #d2d2d279;
+    margin: 0px;
+    padding: 0px;
 }
-.brand-img{
-    width: 20%;
-    border-radius: 10%;
-}
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid black;
-    background-color: black;
+.container-md{
+    background-color: white;
     padding: 5px;
+    /* position: sticky;
+    top: 0; */
+    width: 100%;
+    font-size: 20px;
+    /* z-index: 100; */
     outline: none;
+    border-radius: 5px;
+} 
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    outline: none;
+    border-radius: 5px;
+}
+.navbar-nav{
+    display: flex;
     justify-content: space-between;
-     align-items: center;    
 }
 .navbar-toggler{
     color: black;
@@ -25,7 +39,73 @@
 .brand-img{
     display: inline;
 }
+.nav-link:hover{
+    color: goldenrod;
+    font-size: 24px;
+
+}
+.row{
+    margin:1rem;
+}
+.brand-img{
+    width: 20%;
+    border-radius: 10%;
+}
 .card-body{
     display: flex;
     flex-wrap: wrap;
+}
+.calendar {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+.day {
+    padding: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-color: black;
+    padding: 10px;
+    outline: none;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 8px;
+ 
+}
+.footer a{
+    text-decoration: none;
+}
+.footer a h5:hover{
+    color: whitesmoke;
+    font-size: 26px;
+}
+.copy-act{
+    display: flex;
+    border: 1px solid;
+    border-radius: 2px;   
+    background-color: rgba(0, 0, 0, 0.482);
+    align-items: center;
+    justify-items: center;
+    line-height: none;
+    flex-direction: column;
+    outline: none;
 }

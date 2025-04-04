@@ -325,11 +325,11 @@
         <form mb-4 my-5>
             <div class="my-3">
                 <label for="newform" class="form-label">Name</label>
-                <input type="text" class="form-control" placeholder="e.g Dr. Tijani Bosun" araia-describedby="" required >
+                <input type="text" class="form-control" placeholder="e.g Adebanjo" araia-describedby="" required >
             </div>
             <div class="my-4">
                 <label for="emailpurpose" class="form-label" required>Email Address</label>
-                <input type="email" class="form-control" placeholder="e.g Bootstrap@gmail.com"required> 
+                <input type="email" class="form-control" placeholder="e.g adebanjo@gmail.com"required> 
             </div>
             <div class="my-4">
                <label for="emailpassword" class="form-label" required>Password</label>
@@ -384,39 +384,44 @@
     </div> 
   </div>
 </div>
+
+<!-- <div class="calendar">
+  <div class="calendar-header">
+      <button onclick="prevMonth()">&#8592;</button>
+      <h2 id="monthYear"></h2>
+      <button onclick="nextMonth()">&#8594;</button>
+  </div>
+  <div class="days" id="calendarDays"></div>
+</div> -->
+
+<div class="calendar">
+  <div class="calendar-header">
+      <button onclick="prevMonth()">&#8592;</button>
+      <select id="yearSelect" onchange="changeYear()"></select>
+      <h2 id="monthYear"></h2>
+      <button onclick="nextMonth()">&#8594;</button>
+  </div>
+  <div class="days" id="calendarDays"></div>
+</div>
   <section>
     <footer>
       <div class="footer">
-        <div><a href="#"><h3>Contact</h3></a></div>
-        <div><a href="#"><h3>Skill-with</h3></a></div>
-        <div><a href="#"><h3>Scholarships</h3></a></div>
-        <div><a href="#"><h3>Business</h3></a></div>
-        <div><a href="#"><h3>Collaborations</h3></a></div>
+        <div><a href="#"><h5>Contact</h5></a></div>
+        <!-- <div><a href="#"><h5>Skill-with</h5></a></div> -->
+        <div><a href="#"><h5>Scholarships</h5></a></div>
+        <div><a href="#"><h5>Business</h5></a></div>
+        <div><a href="#"><h5>Collaborations</h5></a></div>
+         <div><a href="#"><h5>Clients</h5></a></div>
+      </div>
+      <div class="copy-act">
+        <h3>Adebanjo Ogunseye</h3>
+        <P>Building disruptive and dynamic user friendly website and mobile Apps</P>
+        <p>&copy; 2025. ALL RIGHT RESERVED</p>
       </div>
     </footer>
     
   </section>
-
-
-      <!--<div class="container-lg">
-        <div class="row">
-          <div class="col">
-            <div class="bg-primary">player</div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary">player</div>
-          </div>
-          <div class="col">
-            <div class="bg-info">player</div>
-          </div>
-          <div class="col">
-            <div class="bg-secondary">player</div>
-          </div>
-        </div>
-      </div>-->
-
-
-
+    <script src="calendar.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7HP5vLgtjHKM1lI8WB0hItb2xRFSU1QK7U5" crossorigin="anonymous"></script>
     <script src="js/bootstrap.bundle.js"></script>
