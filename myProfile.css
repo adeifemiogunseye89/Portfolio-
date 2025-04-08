@@ -1,20 +1,76 @@
-body{
-    font-family: Arial, sans-serif;
-    background-color: #d2d2d279;
+*{
+    line-height: 1.2rem;
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
+:root{
+    /* ############## Background COLOR variable########## */
+    --backgroundBody:#ff66ff; 
+    --BackgroundOutline: #ff88ff;
+    --setionBackground: #ccc9cc;
+    --sectionOutline :#ccc6cc;
+    --divBackground: rgba(232, 225, 225, 0.655);
+    --BigButton : rgb(5, 180, 250);
+    --smallButton: rgb(35, 35, 225);
+
+     /* ############## H1,3,6 COLOR Variable########## */
+     --H1Text: #fff;
+     --h3Text: #aaa56a; 
+     --h6Text: #bb891b; 
+     
+
+      /* ############## MARGIN Variable ########## */
+      --BigRowGap: 1.6rem;
+      --mediumRowGap:1.2rem;
+      --smallRowGap: 1rem;
+      --BigColumnGap:1.4em;
+      --mediumColumnGap:1.2em;
+      --smallColumnGap: 0.8em;
+
+       /* ############## PADDING Variable########## */
+       --BigDivPadding: 15em;
+       --mediumDivPadding: 10em;
+       --smallDivPadding: 5em;
+
+        /* ############## BORDER-RADIUS Variable########## */
+        --BigDivRadius: 10px;
+        --MediumDivRadius: 6px;
+        --smallDivRadius: 2px;
+
+         /* ############## Font-Size variable ########## */
+         --BigFont: 2.5rem;
+         --MediumFont: 1.8rem;
+         --smallfont: 1.2rem;
+
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:var(--sectionbackground);
+  
+}
+.social-link{
+    display :flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: var(--mediumRowGap);
+}
+.social-link a{
+    margin: var(--BigColumnGap);
+}
 .container-md{
-    background-color: white;
+    background-color:white;
     padding: 5px;
     width: 100%;
     font-size: 20px;
     outline: none;
     border-radius: 5px;
 } 
+.img-container{
+    width: fit-content;
+}
 .navbar{
-    position: sticky;
-    top: 0;
     width: 100%;
     font-size: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
@@ -42,7 +98,7 @@ body{
 
 }
 .row{
-    margin:1rem;
+    margin:var(--mediumRowGap);
 }
 .brand-img{
     width: 20%;
@@ -76,16 +132,22 @@ body{
     background: #ddd;
     border-radius: 5px;
 }
+container-div{
+    width: 100%;
+    
+}
 .footer{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    width: 100%;
+    /* border: 1px solid black; */
     background-color: black;
     padding: 10px;
     outline: none;
     justify-content: space-between;
     align-items: center; 
-    margin-top: 8px;
+    line-height: normal;
+    /* margin-top: 8px; */
  
 }
 .footer a{
@@ -105,4 +167,32 @@ body{
     line-height: none;
     flex-direction: column;
     outline: none;
+}
+@media (max-width:600px){
+  img{
+    width: fit-content;
+  }
+  .navbar{
+    font-size: var(--smallfont);
+  }
+ .footer a h5{
+    font-size: 16px;
+ }
+ .footer a h5:hover{
+    font-size: 18px;
+ }
+ .copy-act{
+    line-height: 0;
+ }
+ .copy-act p{
+    font-size: 14px;
+ }
+ .copy-act h3{
+    font-size: 14px;
+ }
+}
+@media(prefers-color-scheme:dark){
+    :root{
+        background-color: var( --divBackground);
+    }
 }
